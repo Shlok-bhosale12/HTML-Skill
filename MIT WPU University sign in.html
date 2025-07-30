@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=" image/jpeg" href="C:\Users\Admin\Desktop\MIT icon.jpeg" />
+    <title>MIT WPU University-Sign in</title>
+    <style>
+        body
+        {
+             background-color:  #d3e0ee;;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0%;
+
+        }
+
+        .signin-container
+        {
+             background: white;
+             padding: 3rem 2rem;
+             height: 30rem;
+             border-radius: 1px;
+             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+             width: 360px;
+
+        }
+
+        h2
+        {
+          text-align: center;
+          color: rgb(2, 0, 107);
+          margin-bottom: 1.5rem;
+        }
+        
+         label
+         {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color:  #333;
+         }
+
+         input[type="email"],
+         input[type="password"]
+         {
+               width: 100%;
+               padding: 0.5rem;
+               margin-bottom: 1.2rem;
+               border: 1.0px solid #000000;
+               border-radius: 5px;
+               font-size: 1rem;
+
+         }
+
+         button
+         {
+            text-align: center;
+            width: 100%;
+            padding: 0.9rem;
+            background-color: rgb(3, 8, 83);
+            border: none;
+            border-radius: 6px;
+            color: rgb(255, 255, 255);
+            font-size: 1.1rem;
+            cursor: pointer;
+         }
+
+         button:hover  
+         {
+            background-color: rgb(18, 112, 18);
+         }
+
+
+         .footer-text
+         {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: rgb(7, 7, 7);
+         }
+
+         .forget-password
+         {
+            text-align: right;
+            margin: 1px;
+
+         }
+
+         .forget-password a
+         {
+            font-size: smaller;
+            color: #000000;
+            text-decoration: none;
+         }
+
+         .forget-password a:hover
+         {
+            text-decoration: underline;
+            color: crimson;
+         }
+         .logo
+         {
+           display: block;
+           margin: 0 auto;
+            width: 15rem;
+            height: 9.2rem;
+            margin-bottom: 0.7rem;
+         }
+    </style>
+
+   </head>
+   <body>
+
+    <div class="signin-container">
+      <img src="C:\Users\Admin\Desktop\MIT icon.jpeg" alt="MIT WPU Logo" class="logo" />
+        <h2>MIT WPU University</h2>
+        <form action="/submit-login" method="post">
+
+            <label for="email">Email or Username</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required /> 
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required /> 
+     
+     
+      <button type="submit">Sign In</button> <br><br>
+      
+      
+      <div class="Forget-password">
+         <a href="/forget-password">Forget-password</a>
+      </div>
+
+      
+    <p class="footer-text">© 2025 MIT WPU University</p>
+        </form>
+    </div>    
+   </body>
+   </html>
